@@ -197,7 +197,8 @@ bool BLEClientSerial::connect(const String &remoteName) {
             return true;
         }
 
-        log_e("can find service %s", serviceUUID_FFF0.toString());
+        log_e("can find service %s", serviceUUID.toString());
+
     }
 
     return false;
@@ -238,7 +239,7 @@ bool BLEClientSerial::connect(uint8_t remoteAddress[]) {
             return true;
         }
 
-        log_e("can find service %s", serviceUUID_FFF0.toString());
+        log_e("can find service %s", serviceUUID.toString());
     }
 
     return false;
